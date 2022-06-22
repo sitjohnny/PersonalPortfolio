@@ -1,19 +1,19 @@
-import { ThemeProvider } from '@mui/material';
-import Navbar from './shared/components/Navbar/components';
-import Button from '@mui/material/Button';
-import theme from './styles/theme';
-import CssBaseline from '@mui/material/CssBaseline';
-import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import Navbar from './shared/Navbar/components';
+import { navItems } from './constants/navItems';
+import Home from './pages/Home';
+import About from './pages/About';
 
 function App() {
     return (
         <>
-            <ThemeProvider theme={theme}>
-                <CssBaseline />
-                <Navbar />
-                <br />
-                <Button>Hello World</Button>;
-            </ThemeProvider>
+            <Navbar navItems={navItems} />
+            <Routes>
+                <Route exact path="/" element={<Home />} />
+                <Route exact path="about" element={<About />} />
+                <Route exact path="projects" />
+                <Route exact path="contact" />
+            </Routes>
         </>
     );
 }

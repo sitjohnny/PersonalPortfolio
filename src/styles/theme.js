@@ -11,6 +11,9 @@ let theme = createTheme({
         background: {
             default: '#1D263B',
         },
+        text: {
+            primary: '#FFFFFF',
+        },
     },
     typography: {
         fontFamily: 'Nunito, Roboto',
