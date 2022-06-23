@@ -11,7 +11,7 @@ import { navItems } from '../../../config/config.js';
 export default function Navbar() {
     return (
         <Box sx={{ display: 'flex' }}>
-            <AppBar component="nav" sx={{ bgcolor: '#1D263B' }} elevation={0}>
+            <AppBar component="nav" sx={{ bgcolor: '#1D263B' }} elevation={0} position="fixed">
                 <Toolbar>
                     <Typography variant="h4" component="div" sx={{ flexGrow: 1 }}>
                         {`<johnny.sit />`}
