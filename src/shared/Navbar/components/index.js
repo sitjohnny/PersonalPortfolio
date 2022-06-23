@@ -2,7 +2,6 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import { NavLink, Link } from 'react-router-dom';
 import Button from '@mui/material/Button';
 import { navItems } from '../../../constants/navItems';
 
@@ -15,15 +14,12 @@ export default function Navbar() {
             <AppBar component="nav" sx={{ bgcolor: '#1D263B' }} elevation={0}>
                 <Toolbar>
                     <Typography variant="h4" component="div" sx={{ flexGrow: 1 }}>
-                        <Link to="/" style={{ textDecoration: 'none', color: '#fff' }}>
-                            {`<johnny.sit />`}
-                        </Link>
+                        {`<johnny.sit />`}
                     </Typography>
                     <Box justifyContent="space-between">
                         {navItems.map((item) => (
                             <Button
                                 key={item.title}
-                                component={NavLink}
                                 to={item.link}
                                 sx={{
                                     color: '#fff',

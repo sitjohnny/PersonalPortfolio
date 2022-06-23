@@ -1,4 +1,3 @@
-import { BrowserRouter } from 'react-router-dom';
 import { ThemeProvider } from '@mui/material';
 import ReactDOM from 'react-dom/client';
 import theme from './styles/theme';
@@ -10,9 +9,7 @@ root.render(
     <>
         <ThemeProvider theme={theme}>
             <CssBaseline />
-            <BrowserRouter>
-                <App />
-            </BrowserRouter>
+            <App />
         </ThemeProvider>
     </>
 );
