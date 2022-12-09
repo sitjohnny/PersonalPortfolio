@@ -11,4 +11,8 @@ export const navItems = [
         title: 'Contact',
         link: '/contact',
     },
+    {
+        title: 'Resume',
+        link: '/resume',
+    },
 ];

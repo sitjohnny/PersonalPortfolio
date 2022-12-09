@@ -34,7 +34,6 @@ export default function Landing() {
                             'Backend Developer',
                             'Conversational AI Engineer',
                         ]}
-                        multiTextLoop={true}
                         typeSpeed={50}
                     />
                 </div>
